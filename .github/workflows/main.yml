@@ -37,7 +37,7 @@ jobs:
         server-password: ${{ secrets.PAT }}
         #settings-path: ${{ github.workspace }} # location for the settings.xml file
     - name: Publish to GitHub Packages Apache Maven
-      run: mvn clean deploy
+      run: mvn clean deploy  -Dregistry=https://pkgs.dev.azure.com/TrainingRK/_packaging/TrainingRK%40Local/maven/v1 -Dtoken=${{ secrets.PAT }} 
     
 
 
