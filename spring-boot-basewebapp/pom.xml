@@ -17,7 +17,18 @@
     <version>1.3.5.RELEASE</version>
     <relativePath /> <!-- lookup parent from repository -->
   </parent>
-
+ <distributionManagement>
+	 <repository>
+  <id>TrainingRK</id>
+  <url>https://pkgs.dev.azure.com/TrainingRK/_packaging/TrainingRK/maven/v1</url>
+  <releases>
+    <enabled>true</enabled>
+  </releases>
+  <snapshots>
+    <enabled>true</enabled>
+  </snapshots>
+</repository>
+ </distributionManagement>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <start-class>netgloo.Application</start-class>
